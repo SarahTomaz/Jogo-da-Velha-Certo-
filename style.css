@@ -1,0 +1,119 @@
+html{
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba()); /*Adicionar cores depois rgba*/
+}
+.conteiner{
+display: grid;
+width: 100%;
+height: 100%;
+display: grid;
+justify-content: center;
+align-content: center;
+justify-content: center;
+align-items: center;
+grid-template-columns: repeat(3, auto);
+
+}
+.bloco{
+width: 100px;
+height: 100px;
+border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.bloco.X,.bloco.bolinha{
+cursor: not-allowed;
+}
+.bloco:nth-child(1),
+.bloco:nth-child(2),
+.bloco:nth-child(3) {
+border-top: none;
+}
+.bloco:nth-child(1),
+.bloco:nth-child(4),
+.bloco:nth-child(7) {
+border-left: none;
+}
+.bloco:nth-child(3),
+.bloco:nth-child(6),
+.bloco:nth-child(9) {
+border-right: none;
+}
+.bloco:nth-child(7),
+.bloco:nth-child(8),
+.bloco:nth-child(9) {
+border-bottom: none;
+}
+/* Imagem do Cachorrinho*/
+.bloco.X {
+    background-image: url(/img/cachorro.jpg);
+    background-size: cover;
+
+}
+/* Imagem do Gatinho*/
+.bloco.bolinha{
+    background-image: url(/img/gatinho.jpg);
+    background-size: cover;
+}
+
+
+/*.titulo {
+    margin-left: 420px;
+    padding: 50px;
+    top: 5px;
+    display: flex;
+    width: 500px;
+    height: 10px;
+    font-family: Arial;
+    font-size: 25px;
+  }
+  .conteiner {
+    justify-content: center;
+    height: 180px;
+    width: 550px;
+    margin: auto;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+  
+  .estrutura {
+    display: flex;
+    margin-top: 200px;
+  }
+  
+  .bloco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: blue;
+    width: 180px;
+    height: 180px;
+  }
+  .bloco1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: blue;
+    width: 180px;
+    height: 180px;
+  }
+  .bloco2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: blue;
+    width: 180px;
+    height: 180px;
+  }
+*/
