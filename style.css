@@ -52,68 +52,48 @@ border-bottom: none;
 }
 /* Imagem do Cachorrinho*/
 .bloco.X {
-    background-image: url(/img/cachorro.jpg);
+    background-image: url(./img/cachorro.jpg);
     background-size: cover;
 
 }
 /* Imagem do Gatinho*/
 .bloco.bolinha{
-    background-image: url(/img/gatinho.jpg);
+    background-image: url(./img/gatinho.jpg);
     background-size: cover;
 }
 
+.winermsg {
+  display: none; /* ALTERAR DEPOIS QUANDO FOR USAR O JS */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+.winermsg button {
+  font-size: 2.5rem;
+  background-color: rgba(); /* mesma cor do fundo */
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  color: black;
+}
+.winermsg button:hover {
+  color: rgba(0, 0, 0, 0.8); /* mudar pra outra cor depois */
+  background-color: white;
+}
+.winermsg p {
+  color: black;
+  font-size: 5rem;
+  font-family: Georgia;
+}
 
-/*.titulo {
-    margin-left: 420px;
-    padding: 50px;
-    top: 5px;
-    display: flex;
-    width: 500px;
-    height: 10px;
-    font-family: Arial;
-    font-size: 25px;
-  }
-  .conteiner {
-    justify-content: center;
-    height: 180px;
-    width: 550px;
-    margin: auto;
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px;
-    column-gap: 10px;
-    row-gap: 15px;
-  }
-  
-  .estrutura {
-    display: flex;
-    margin-top: 200px;
-  }
-  
-  .bloco {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 50px;
-    background-color: blue;
-    width: 180px;
-    height: 180px;
-  }
-  .bloco1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 50px;
-    background-color: blue;
-    width: 180px;
-    height: 180px;
-  }
-  .bloco2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 50px;
-    background-color: blue;
-    width: 180px;
-    height: 180px;
-  }
-*/
+.show-winning-message{
+  display: flex;
+}
