@@ -18,7 +18,7 @@ const startGame = () => {
         winermsgElements.classList.remove("show-winning-message");
     };
    
-}
+};
 
 const combinações = [
     [0,1,2],
@@ -42,6 +42,7 @@ const fimDeJogo = (isempate) => {
     winermsgElements.classList.add("show-winning-message");
 };
 
+
 const checarVitoria = (turnoAtual) => {
     return combinações.some((combinações) => {
         return combinações.every((index) => {
@@ -53,12 +54,6 @@ const checarVitoria = (turnoAtual) => {
 const placeMark = (cell, classToAdd) => {
     cell.classList.add(classToAdd);
 }; 
-
-const checarEmpate = () => {
-    return[...cellElements].every((cell) =>{
-       return cell.classList.contain("X") || cell.classList.contain("bolinha");
-    });
-};
 
 const swapTurns = () => {
     isCircleTurn = !isCircleTurn;
@@ -82,18 +77,11 @@ const handleClick = (e) => {
     placeMark(cell, classToAdd);
 
     const vitoria = checarVitoria(classToAdd);
-    const draw = checarEmpate();
     if (vitoria){
         fimDeJogo(false);
-    }else if(draw){
-        fimDeJogo(true);
-    }else{
-        swapTurns();
     }
+
+    swapTurns();
 };
 
-startGame();
-
-butãoFim.addEventListener('click', startGame);
-
-
+butãoFim.addEventListener('click', startGame());
